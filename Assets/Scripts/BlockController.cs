@@ -36,22 +36,22 @@ public class BlockController : MonoBehaviour
         negativeXtrig = negativeXobject.GetComponent<CheckOtherObject>();
         positiveZtrig = positiveZobject.GetComponent<CheckOtherObject>();
         negativeZtrig = negativeZobject.GetComponent<CheckOtherObject>();
-        currentColor = gameObject.GetComponent<MeshRenderer>().material.color;
+        currentColor = block.gameObject.GetComponent<MeshRenderer>().material.color;
+
+        BlockSelection.Instance.blockList.Add(this.gameObject);
     }
-    /*
-    private void Update()
-    {
-        float turnUp = Input.GetAxis("Vertical");
-        float turnRight = Input.GetAxis("Horizontal");
-        transform.position = new Vector3(transform.position.x + (turnRight * Time.deltaTime), transform.position.y + (turnUp * Time.deltaTime), transform.position.z);
-    }
-    */
+    
     public void UpdateObject()
     {
         if (positiveXtrig.triggered && negativeXtrig.triggered && positiveZtrig.triggered && negativeZtrig.triggered)
         {
             block.gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
         }
+    }
+
+    private void OnDestroy()
+    {
+        BlockSelection.Instance.blockList.Remove(this.gameObject);
     }
 
     void OnMouseUp()
@@ -62,8 +62,8 @@ public class BlockController : MonoBehaviour
                 Destroy(gameObject);
                 break;
             case TypeOfClickOnBlock.ChangeColor:
-                gameObject.GetComponent<MeshRenderer>().material.color = Color.blue;
-                currentColor = gameObject.GetComponent<MeshRenderer>().material.color;
+                block.gameObject.GetComponent<MeshRenderer>().material.color = Color.blue;
+                currentColor = block.gameObject.GetComponent<MeshRenderer>().material.color;
                 break;
         }
     }

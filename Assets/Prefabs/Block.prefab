@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3586322899939253164}
   - component: {fileID: 3586322899939253166}
   - component: {fileID: 3586322899939253165}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: negativeXtrig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 3586322900214235805}
   - component: {fileID: 3586322900214235807}
   - component: {fileID: 3586322900214235806}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: negativeZtrig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 3586322900395785261}
   - component: {fileID: 3586322900395785263}
   - component: {fileID: 3586322900395785262}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: positiveXtrig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 3586322900968025430}
   - component: {fileID: 3586322900968025429}
   - component: {fileID: 5760111606982665955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 3586322901083738209}
   - component: {fileID: 3586322901083738210}
   - component: {fileID: 7666450286823291612}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 3586322901226828447}
   - component: {fileID: 3586322901226828441}
   - component: {fileID: 3586322901226828440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: positiveZtrig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 5731679529619068329}
   - component: {fileID: 6383792777849720322}
   - component: {fileID: 4655854213753852456}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
